@@ -16,8 +16,8 @@ Activate Virtual Environment:
 - macOS + Linux: `source venv/bin/activate`
 
 ## Download Modules + Dependencies
-Download and install FFmpeg ![here](https://ffmpeg.org/download.html) or by using your preferred package manager.
-Download the latest version of ![OpenAI's Whisper.](https://github.com/openai/whisper)
+Download and install FFmpeg [here](https://ffmpeg.org/download.html) or by using your preferred package manager.  
+Download the latest version of ![OpenAI's Whisper.](https://github.com/openai/whisper):  
 `pip install -U openai-whisper`
 
 ## Running from Anywhere
@@ -33,35 +33,35 @@ alias vtt="transcribe_video"
 alias bvtt="batch_transcribe_video"
 ```
 
-*NOTE: Be sure to edit the paths of the Bash Scripts to reflect the locations of the virtual environment and `speech_to_text.py` on your device.*
-*NOTE: Make sure all Bash scripts have executable permissions.*
+*NOTE: Be sure to edit the paths of the Bash Scripts to reflect the locations of the virtual environment and `speech_to_text.py` on your device.*  
+*NOTE: Make sure all Bash scripts have executable permissions.*  
 
 ## Speech-to-Text for a Single File
 #### Audio Files
-Using the Python script directly on an audio file (only print the time-stamped transcript):
-`python speech_to_text.py <AUDIO_FILE>`
-Using the Bash script on an audio file:
-`transcribe_audio <AUDIO_FILE>`
-Using the aliased Bash script on an audio file:
-`att <AUDIO_FILE>`
+Using the Python script directly on an audio file (only print the time-stamped transcript):  
+`python speech_to_text.py <AUDIO_FILE>`  
+Using the Bash script on an audio file:  
+`transcribe_audio <AUDIO_FILE>`  
+Using the aliased Bash script on an audio file:  
+`att <AUDIO_FILE>`  
 
 #### Video Files
-Using the Bash script on an video file:
-`transcribe_video <VIDEO_FILE>`
-Using the aliased Bash script on an audio file:
-`vtt <VIDEO_FILE>`
+Using the Bash script on an video file:  
+`transcribe_video <VIDEO_FILE>`  
+Using the aliased Bash script on an audio file:  
+`vtt <VIDEO_FILE>`  
 
 ## Speech-to-Text for Many Files
 *NOTE: Transcripts for each individual file will be produced and named in accordance with their input file. A combined transcript will be produced in file name order.*
 
 #### Audio Files
-Using the Bash script on a group of audio files:
-`batch_transcribe_audio <AUDIO_FILE_EXTENSION>`
-Using the aliased Bash script on a group of audio files:
-`batt <AUDIO_FILE_EXTENSION>`
+Using the Bash script on a group of audio files:  
+`batch_transcribe_audio <AUDIO_FILE_EXTENSION>`  
+Using the aliased Bash script on a group of audio files:  
+`batt <AUDIO_FILE_EXTENSION>`  
 
 #### Video Files
-Using the Bash script on a group of video files:
-`batch_transcribe_video <VIDEO_FILE_EXTENSION>`
-Using the aliased Bash script on a group of video files:
-`bvtt <VIDEO_FILE_EXTENSION>`
+Using the Bash script on a group of video files:  
+`batch_transcribe_video <VIDEO_FILE_EXTENSION>`  
+Using the aliased Bash script on a group of video files:  
+`bvtt <VIDEO_FILE_EXTENSION>`  
