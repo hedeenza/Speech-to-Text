@@ -30,10 +30,10 @@ Add the following lines to your `.bashrc` file:
 # Speech-to-Text Tools
 export PATH="$PATH:/path/to/directory/where/these/scripts/live"
 
-alias att="transcribe_audio"
-alias batt="batch_transcribe_audio"
-alias vtt="transcribe_video"
-alias bvtt="batch_transcribe_video"
+alias att="transcribe_audio.sh"
+alias batt="batch_transcribe_audio.sh"
+alias vtt="transcribe_video.sh"
+alias bvtt="batch_transcribe_video.sh"
 ```
 
 *NOTE: Be sure to edit the paths of the Bash Scripts to reflect the locations of the virtual environment and `speech_to_text.py` on your device.*  
@@ -44,13 +44,13 @@ alias bvtt="batch_transcribe_video"
 Using the Python script directly on an audio file (only print the time-stamped transcript):  
 `python speech_to_text.py <AUDIO_FILE>`  
 Using the Bash script on an audio file:  
-`transcribe_audio <AUDIO_FILE>`  
+`transcribe_audio.sh <AUDIO_FILE>`  
 Using the aliased Bash script on an audio file:  
 `att <AUDIO_FILE>`  
 
 #### Video Files
 Using the Bash script on an video file:  
-`transcribe_video <VIDEO_FILE>`  
+`transcribe_video.sh <VIDEO_FILE>`  
 Using the aliased Bash script on an audio file:  
 `vtt <VIDEO_FILE>`  
 
@@ -59,12 +59,12 @@ Using the aliased Bash script on an audio file:
 
 #### Audio Files
 Using the Bash script on a group of audio files:  
-`batch_transcribe_audio <AUDIO_FILE_EXTENSION>`  e.g. `batch_transcribe_audio mp4`
+`batch_transcribe_audio.sh <AUDIO_FILE_EXTENSION>`  e.g. `batch_transcribe_audio.sh mp4`
 Using the aliased Bash script on a group of audio files:  
 `batt <AUDIO_FILE_EXTENSION>`  e.g. `batt mp4`
 
 #### Video Files
 Using the Bash script on a group of video files:  
-`batch_transcribe_video <VIDEO_FILE_EXTENSION>`  e.g. `batch_transcribe_video mp4`
+`batch_transcribe_video.sh <VIDEO_FILE_EXTENSION>`  e.g. `batch_transcribe_video.sh mp4`
 Using the aliased Bash script on a group of video files:  
 `bvtt <VIDEO_FILE_EXTENSION>`  e.g. `bvtt mp4`
