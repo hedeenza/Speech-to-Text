@@ -3,7 +3,7 @@
 ## Description:
 - A speech-to-text pipeline using OpenAI's Whisper model. The Python and Bash scripts will allow users to process individual audio or video files, as well as batches of audio or video files that are to be combined into one transcript.
 - Sped up audio / video (i.e. at 1.25x, 1.5x, 2x speed) can be processed, but it seems the faster the audio, the greater the likelihood of a particular kind of parsing error occurs. With this error, there is no punctuation and all words are lowercase.
-- Tools for "cleaning" output transcripts are planned.
+- Tools for "cleaning" output transcripts are available in my ["Clean Speech-to-Text Transcriptions"](https://github.com/hedeenza/Clean-Speech-To-Text-Transcriptions) repository.
 
 ## Get the Files
 - You may copy and paste the desired files or download them from "Releases".
